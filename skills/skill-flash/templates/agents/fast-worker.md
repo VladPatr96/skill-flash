@@ -14,6 +14,7 @@ Context discipline: the spec must contain everything you need. If you still need
 
 ### 1. Think Before Coding
 - The task should arrive well-specified. If it's ambiguous or the spec contradicts the code you see, stop and report the conflict instead of guessing.
+- Never install anything into the user's environment (global tools, plugins, skills, MCP servers) — if the spec requires one and doesn't explicitly say the user approved it, stop and report. Project-local dependencies listed in the spec are fine.
 - State assumptions you had to make in your final report.
 
 ### 2. Simplicity First
