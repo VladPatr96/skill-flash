@@ -37,8 +37,8 @@ description: Company-OS суперскилл — разворачивает «к
 
 1. `git init` при необходимости; `.gitignore` под стек; `README.md` проекта.
 2. GitHub-remote: `gh repo create --private` + push (публичность — спросить, только если она в целях проекта).
-3. Лейблы: `dept:<отдел>`, `status:{queued,in-progress,verify,blocked}`, `type:{feature,bug,chore,tooling,ritual}`.
-4. Ядро компании из шаблонов: `company/README.md` (карта), `company/state.md` (живой статус — по `templates/state.md`), чартеры `company/board/`, `company/engineering/`, `company/qa/` (по `templates/dept-charter.md`).
+3. Лейблы: `dept:<отдел>`, `status:{queued,spec-ready,in-progress,verify,blocked}`, `type:{feature,bug,chore,tooling,ritual}` (`spec-ready` = спека в теле готова, можно диспатчить).
+4. Ядро компании из шаблонов: `company/README.md` (карта), `company/state.md` (живой статус — по `templates/state.md`), чартеры `company/board/`, `company/engineering/`, `company/qa/` (по `templates/dept-charter.md`). Цель долгосрочная (этапы) → плюс `company/roadmap.md`: этапы с метрик-гейтами, не с датами.
 5. Агенты ядра в `.claude/agents/` из `templates/agents/`: `deep-reasoner` (Opus), `fast-worker` (Sonnet), `verifier` (Sonnet).
 6. `CLAUDE.md` целевого репо: вставить блок `templates/claude-md-section.md` (orchestration workflow + behavioral guidelines + query-first).
 7. Milestone `v0` + epic-issue «Company bootstrap»; закрывается приёмкой сетапа (verifier прогоняет чек-лист).
@@ -48,7 +48,7 @@ description: Company-OS суперскилл — разворачивает «к
 Для непустой кодовой базы — сразу; для пустой — после первого смержённого кода:
 
 1. **Оффер на установку** (принцип 5): предложи пользователю поставить uv (если нет) и graphify — зачем (query-first экономит токены всем агентам), команды (`uv tool install graphifyy` → `graphify claude install`), что при отказе (фолбэк-карта из п. 5). После подтверждения — установи и запусти `/graphify .` (граф мультимодален — код, SQL, доки, PDF, картинки — поэтому работает и для дизайн-проектов)
-2. `graphify-out/` (graph.json, graph.html, GRAPH_REPORT.md) коммитится в репо — карта общая для всех агентов.
+2. `graphify-out/` (graph.json, graph.html, GRAPH_REPORT.md) коммитится в репо — карта общая для всех агентов; `graphify-out/cache/` — в `.gitignore` (генерируемый кэш).
 3. Хук на коммиты (ставится `graphify claude install`) перестраивает граф локально (AST-only, без API-затрат).
 4. Правило **query-first** для всех агентов (уже в claude-md-section): контекст сначала `graphify query "вопрос"`, чтение файлов — только точечно по результатам подграфа.
 5. Fallback, если graphify поставить нельзя (нет uv/сети) или пользователь отказался: `company/knowledge/codemap.md` — двухуровневая карта (модули → ключевые файлы → контракты), строит Sonnet-скаут, обновляется при приёмке задач, менявших структуру. Отказ зафиксируй в state.md и больше не предлагай, пока пользователь сам не вернётся к теме.
@@ -90,7 +90,7 @@ description: Company-OS суперскилл — разворачивает «к
 ## Фаза 5 — Ритуалы (собрания и отчёты)
 
 Событийные (по конвейеру, не по таймеру):
-- **Kickoff эпика** — протокол `company/meetings/YYYY-MM-DD-kickoff-<epic>.md` (шаблон в `templates/rituals.md`): цель, состав отделов, план спек, риски.
+- **Kickoff эпика** — перед первым диспатчем его задач: протокол `company/meetings/YYYY-MM-DD-kickoff-<epic>.md` (шаблон в `templates/rituals.md`): цель, состав отделов, план спек, риски.
 - **Приёмка задачи** — не собрание: closing-коммент issue.
 - **Ретро эпика** — после финального ревью: `...-retro-<epic>.md`; улучшения регламента превращаются в issue на правку CLAUDE.md/чартеров. Переносимые уроки — в `company/knowledge/lessons.md`; универсальные (пригодятся в других проектах) — дописать в глобальную базу `~/.claude/skills/skill-flash/lessons.md` (формат: `дата — проект — урок одной строкой`). При Intake нового проекта эту базу прочитать.
 
