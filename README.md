@@ -42,7 +42,7 @@
 ```powershell
 git clone https://github.com/VladPatr96/skill-flash
 cd skill-flash
-Copy-Item -Recurse -Force skills/skill-flash "$env:USERPROFILE/.claude/skills/skill-flash"
+Get-ChildItem skills -Directory | ForEach-Object { Copy-Item -Recurse -Force $_.FullName "$env:USERPROFILE/.claude/skills/$($_.Name)" }
 ```
 
 Ставьте одним способом, не обоими сразу — иначе скилл задвоится. После установки доступен во всех проектах как `/skill-flash`.
@@ -54,7 +54,8 @@ Copy-Item -Recurse -Force skills/skill-flash "$env:USERPROFILE/.claude/skills/sk
 | Путь | Что это |
 |------|---------|
 | `.claude-plugin/` | Манифесты плагина и маркетплейса (Claude Code); `.codex-plugin/` — то же для Codex CLI |
-| `skills/skill-flash/SKILL.md` | Регламент суперскилла (источник правды) |
+| `skills/skill-flash/SKILL.md` | Регламент-роутер (источник правды, худеет по мере выноса кирпичей) |
+| `skills/planerka`, `skills/weak-dispatch`, `skills/writing-specs` | **Кирпичи** — маленькие скиллы «одна задача» (философия mattpocock/skills): команды для пользователя + дисциплины для моделей; карта и очередь выноса — `docs/BRICKS.md` |
 | `skills/skill-flash/templates/` | Шаблоны: спека issue, чартер отдела, карта компании, живой статус (state.md), OKR, планёрка, консилиум, ритуалы (weekly + месячный business review), промт-пак ядра (слот-формат Anthropic prompt library), агенты, блок для CLAUDE.md с правилами кода |
 | `skills/skill-flash/templates/blueprints/` | Готовые оргпроекты по типу бизнеса: media, saas, creator, agency, generic — отделы, промт-паки, OKR-заготовки, гейты этапов, первые задачи |
 | `skills/skill-flash/registry.md` | Реестр проверенных скиллов для «найма» + как искать новые |
