@@ -1,6 +1,6 @@
 ---
 name: writing-specs
-description: Дисциплина написания самодостаточной спеки в тело issue — исполнитель работает без разведки и вопросов. Use WHENEVER writing or rewriting an issue body before dispatch (skill-flash issue-first pipeline), or when an executor asked a question / did unplanned exploration (symptom of a weak spec).
+description: Use WHENEVER writing or rewriting an issue body before dispatch (office issue-first pipeline), or when an executor asked a question / did unplanned exploration (symptom of a weak spec) — дисциплина написания самодостаточной спеки в тело issue: исполнитель работает без разведки и вопросов.
 ---
 
 # Writing-specs: спека, снимающая мышление

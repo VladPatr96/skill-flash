@@ -1,13 +1,13 @@
 ---
 name: weak-dispatch
-description: Дисциплина диспатча дешёвым моделям (executor-profile weak) — слабая модель выдаёт результат топовой за счёт процесса. Use WHENEVER dispatching a coding task to a cheap model (haiku-class agent in charter, local model, budget executor), or after a weak executor failed verification once.
+description: Use WHENEVER dispatching a coding task to a cheap model (haiku-class agent in charter, local model, budget executor), or after a weak executor failed verification once — дисциплина диспатча дешёвым моделям (executor-profile weak): слабая модель выдаёт результат топовой за счёт процесса.
 ---
 
 # Weak-dispatch: усилитель слабых моделей
 
 Слабая модель проваливает четыре вещи: длинный контекст, решения на развилках, само-оценку, остановку вовремя. Все четыре заменяются процессом — исполнителю остаётся короткий однозначный шаг с внешней проверкой.
 
-## Правила диспатча (поверх обычного конвейера skill-flash)
+## Правила диспатча (поверх обычного конвейера office)
 
 1. **Атомарность.** Задача = один файл, ожидаемый дифф ≤ ~40 строк. Крупнее — дроби на цепочку issues ДО диспатча, не надейся.
 2. **Контекст-пакет.** Вырезки затрагиваемых функций — прямо в тело спеки (добудь через `graphify query`). Weak-исполнитель не ищет и не читает ничего сверх спеки.
