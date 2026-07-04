@@ -1,4 +1,4 @@
-<!-- Общий промт-пак Skill Flash. Формат — слот-промты в стиле Anthropic prompt
+<!-- Общий промт-пак Office. Формат — слот-промты в стиле Anthropic prompt
      library (code.claude.com/docs/en/prompt-library): текст с {слотами} + пример
      заполнения. Паки отделов лежат в blueprints и копируются в company/<отдел>/
      при найме. Этот файл — промты фаундера и общие инженерные. -->
