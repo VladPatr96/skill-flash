@@ -1,6 +1,6 @@
 <!-- Планёрка — первый ритуал сессии (принцип 6). Одно сообщение фаундеру:
      факты → решения пакетом → что поедет дальше. Протокол сохраняется в
-     company/meetings/YYYY-MM-DD-planerka.md, решения переносятся в state.md. -->
+     company/meetings/YYYY-MM-DD-planerka.md, решения переносятся в state.md. Голоса персон — по `templates/SOUL.md` (если `soul: off` не стоит в company/README.md). -->
 
 # Планёрка {{дата}}
 

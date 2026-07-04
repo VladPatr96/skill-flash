@@ -1,4 +1,4 @@
-<!-- Шаблоны ритуалов. Протоколы — company/meetings/, отчёты — company/reports/. -->
+<!-- Шаблоны ритуалов. Протоколы — company/meetings/, отчёты — company/reports/. Голоса персон — по `templates/SOUL.md` (если `soul: off` не стоит в company/README.md). -->
 
 # Kickoff эпика — company/meetings/YYYY-MM-DD-kickoff-{{epic}}.md
 
