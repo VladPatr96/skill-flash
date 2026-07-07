@@ -11,6 +11,12 @@ The canonical language of this repository is English. Russian docs live under `r
 | `/solve <task>` | One-off work that does not need a standing company | A bounded task spec, execution, and verification |
 | `/office <goal>` | Ongoing product/business work | Repo bootstrap, GitHub issue pipeline, departments, rituals, and lessons |
 
+## Universal skills
+
+| Skill | What it's for | How to use |
+|-------|---------------|------------|
+| `skill-craft` | Meta-discipline for writing, editing, and pruning short predictable office skills. | run skill-craft over a skill draft before merging it |
+
 ## What Office Adds
 
 - **Issue-first execution.** Work starts as a self-contained issue or file spec, not a vague chat instruction.
