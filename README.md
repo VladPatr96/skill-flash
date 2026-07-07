@@ -16,6 +16,7 @@ The canonical language of this repository is English. Russian docs live under `r
 | Skill | What it's for | How to use |
 |-------|---------------|------------|
 | `skill-craft` | Meta-discipline for writing, editing, and pruning short predictable office skills. | run skill-craft over a skill draft before merging it |
+| `unstuck` | Escape ladder for dead ends. | fires itself after the third failed attempt, or say "I'm stuck" |
 
 ## What Office Adds
 
