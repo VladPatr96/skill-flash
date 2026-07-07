@@ -1,27 +1,28 @@
 ---
 name: handoff
-description: Use when transferring work to another agent, CLI, worktree, human, or future session; also use before context compaction or stopping mid-task.
+description: Task envelope for handing a session or subtask to another agent; unlike writing-specs (a permanent spec in the tracker), the envelope is a one-shot transfer document.
+disable-model-invocation: true
 ---
 
 # Handoff
 
-Package state so the next executor can continue without archaeology.
+The envelope is self-contained: the recipient sees only the envelope, never your session — everything needed goes inside.
 
-## Include
+## Steps
 
-1. Goal and issue/spec link.
-2. Current status: done, in progress, blocked, or needs verification.
-3. Files changed or intentionally not touched.
-4. Commands run and important outputs.
-5. Decisions already made.
-6. Open risks and blockers.
-7. Exact next step.
+1. If an argument is given, treat it as the focus of the next session and shape the envelope around it.
+2. Fill eight sections: Context (files, constraints, project charter) / Task / Decisions already made / Executor class / DoD + verify command / Report format / Suggested skills / Links to artifacts.
+3. Pick the executor class by task type — huge-context for whole-repo analysis, frontier for architecture and debugging, cheap for mechanics, sandbox for running code — and record the choice in the envelope.
+4. Link existing artifacts (PRD, plans, ADRs, issues, commits) by path or URL; the envelope points to them instead of restating their content.
+5. Pass pointers to secrets' locations, never values: redact keys, passwords, and PII before anything enters the envelope.
+6. Save the envelope to a temporary directory, keeping the workspace clean of one-shot documents.
+7. Run the self-containment test — done when a fresh agent with zero context could start from the envelope alone; patch every gap found and retest.
 
-## Rules
+## Exit checklist
 
-- Do not paste long logs; cite paths and summarize the signal.
-- If crossing CLIs, include install/layout assumptions.
-- If handing to a weak executor, include the `weak-dispatch` envelope.
-- If handing to verifier, include spec plus artifacts only, not the maker's rationale.
+- All eight sections present and filled.
+- Executor class recorded with a one-line reason.
+- No secret values and no duplicated artifact content inside the envelope.
+- Self-containment test passed.
 
-End with a one-line resume prompt.
+Envelope adapted from mattpocock/skills — handoff (MIT).
