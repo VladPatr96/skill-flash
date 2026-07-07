@@ -16,6 +16,7 @@ The canonical language of this repository is English. Russian docs live under `r
 | Skill | What it's for | How to use |
 |-------|---------------|------------|
 | `skill-craft` | Meta-discipline for writing, editing, and pruning short predictable office skills. | run skill-craft over a skill draft before merging it |
+| `done-check` | Pre-"done" self-check: every claim backed by evidence from this session. | fires before any completion claim, or say "run done-check" |
 
 ## What Office Adds
 
