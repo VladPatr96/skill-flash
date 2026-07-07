@@ -16,6 +16,7 @@ The canonical language of this repository is English. Russian docs live under `r
 | Skill | What it's for | How to use |
 |-------|---------------|------------|
 | `skill-craft` | Meta-discipline for writing, editing, and pruning short predictable office skills. | run skill-craft over a skill draft before merging it |
+| `handoff` | Task envelope for agent-to-agent transfer. | say "handoff" (+ optional focus of the next session) |
 | `done-check` | Pre-"done" self-check: every claim backed by evidence from this session. | fires before any completion claim, or say "run done-check" |
 | `recon` | First 10 minutes in an unfamiliar project: pulse, strict-order reading, five-line map, task zone. | fires on entering a new repo, or say "recon this project" |
 | `unstuck` | Escape ladder for dead ends. | fires itself after the third failed attempt, or say "I'm stuck" |
