@@ -16,6 +16,7 @@ The canonical language of this repository is English. Russian docs live under `r
 | Skill | What it's for | How to use |
 |-------|---------------|------------|
 | `skill-craft` | Meta-discipline for writing, editing, and pruning short predictable office skills. | run skill-craft over a skill draft before merging it |
+| `handoff` | Task envelope for agent-to-agent transfer. | say "handoff" (+ optional focus of the next session) |
 
 ## What Office Adds
 
