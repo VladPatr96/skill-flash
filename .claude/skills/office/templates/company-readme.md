@@ -18,7 +18,7 @@
 |---|---|---|---|
 | Board | Strategy, scope, decisions | `company/`, issues, roadmap | decision latency |
 | Engineering | Product/code artifacts | source, tests, technical docs | verified throughput |
-| QA | Verification and risk | DoD, checks, release gates | escaped defects |
+| QA | Verification and risk | DoD, checks, incidents, release gates | escaped defects |
 
 ## Current Outcomes
 
@@ -31,4 +31,5 @@
 - State: `company/state.md`
 - OKR: `company/okr.md`
 - Lessons: `company/knowledge/lessons.md`
+- Incidents: `company/incidents/`
 - Meetings: `company/meetings/`

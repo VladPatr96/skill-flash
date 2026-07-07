@@ -8,3 +8,4 @@
 - Добавлена маршрутизация моделей классами.
 - Добавлены multi-CLI layouts и install scripts.
 - Добавлена трассировка legacy principles Fable 5.
+- При merge issue-1 добавлены bricks `casting`, `corporate`, `debrief`, `fire-drill`, `greenlight`, `memo` в English canon и RU mirror.

@@ -24,6 +24,12 @@ Last updated: `<YYYY-MM-DD>`
 |---|---|---|---|
 |  |  |  |  |
 
+## Incidents
+
+| Incident | Signal | Status | Next action |
+|---|---|---|---|
+|  |  |  |  |
+
 ## Lessons To Confirm
 
 | Candidate | Evidence | Needs |
@@ -34,4 +40,4 @@ Last updated: `<YYYY-MM-DD>`
 
 | Item | Verdict | Evidence |
 |---|---|---|
-|  |  |
+|  |  |  |

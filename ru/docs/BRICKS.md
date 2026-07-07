@@ -16,8 +16,10 @@ Office состоит из компактных bricks: один skill, одна
 |---|---|---|
 | Intake | `solve`, `office`, `frame`, `grill-me` | `recon`, `premortem` |
 | Spec | `writing-specs` | `weak-dispatch`, `reproduce` |
+| Specification | `memo`, `writing-specs` | `weak-dispatch`, `reproduce` |
 | Execution | `next-step`, `loop`, `handoff` | `done-check` |
 | Acceptance | `verifying` | `lesson` |
-| Ops | `planerka`, `consilium`, `design-stack` | `unstuck` |
+| Ops | `planerka`, `corporate`, `debrief`, `fire-drill`, `greenlight` | `unstuck` |
+| Hiring | `casting`, `design-stack`, `consilium` | `skill-craft` |
 
 Новые bricks создаются только из наблюдаемого повторяющегося failure pattern.

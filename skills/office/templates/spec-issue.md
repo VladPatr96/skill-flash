@@ -17,6 +17,14 @@
 - Could break:
 - Migration/docs impact:
 
+## Metadata
+
+- Complexity: `S|M|L`
+- Conflict paths:
+- Parallel safe: `yes|no`
+- Depends on:
+- Tooling opportunity:
+
 ## Resolved Choices
 
 | Choice | Decision | Reason |

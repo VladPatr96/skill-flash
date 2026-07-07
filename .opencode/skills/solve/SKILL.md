@@ -9,7 +9,7 @@ Complete a one-off task with the smallest process that still preserves verificat
 
 ## Boundaries First
 
-Stop for approval before irreversible actions, spending, production deploys, public posting, or external messages. If the result cannot be verified by an AI, state proxy criteria. If access/tooling is missing, say what is blocked and offer the nearest useful fallback.
+Stop for approval before irreversible actions, spending, production deploys, public posting, external messages, or global installs. If the result cannot be verified by an AI, state proxy criteria. If access/tooling is missing, say what is blocked and offer the nearest useful fallback.
 
 ## Triage
 

@@ -9,7 +9,7 @@
     {
       "name": "office",
       "source": "./",
-      "description": "Deploys a curated agent company into any repository: self-contained issue specs, pointer dispatch, model-class routing, weak-dispatch for cheap executors, fresh-context verification, department charters, high-stakes consilium, living state docs, lessons, and generated layouts for multiple CLIs.",
+      "description": "Deploys a curated agent company into any repository: self-contained issue specs, pointer dispatch, model-class routing, weak-dispatch for cheap executors, fresh-context verification, department charters, hiring offers, incident drills, business reviews, high-stakes consilium, living state docs, lessons, and generated layouts for multiple CLIs.",
       "version": "1.0.0",
       "author": {
         "name": "Vlad Patravaev"

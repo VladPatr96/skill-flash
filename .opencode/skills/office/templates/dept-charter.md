@@ -14,6 +14,7 @@
 - Issues labels:
 - Decisions:
 - Metrics:
+- Tools:
 
 ## Does Not Own
 
@@ -32,7 +33,5 @@
 3. Run named checks.
 4. Report files changed, commands, output, and risks.
 5. Hand off to QA for fresh-context verification.
-
-## Tooling
 
 Repeated work three times becomes a `type:tooling` issue.

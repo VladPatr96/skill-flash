@@ -10,15 +10,15 @@
 - Main risks:
 - Verification strategy:
 
-## Epic Retro
+## Epic Retro / Debrief
 
 - What shipped:
 - Evidence:
 - What failed verification:
-- Decisions that held:
-- Decisions to revisit:
+- Open items and decision for each:
+- Delay attribution: scope / dependency / quality / environment / decision.
 - Lessons written:
-- Process changes:
+- Process issues created:
 
 ## Weekly Report
 
@@ -34,8 +34,10 @@
 ## Monthly Business Review
 
 - Objective progress:
+- Source of truth for each KR:
 - Roadmap gates:
 - Tooling/hiring ROI:
+- Pipeline health:
 - Incidents and lessons:
 - Decisions for next month:
 

@@ -15,10 +15,11 @@ Office is built from compact bricks: one skill, one job, one trigger surface. Th
 | Stage | Command bricks | Discipline bricks |
 |---|---|---|
 | Intake | `solve`, `office`, `frame`, `grill-me` | `recon`, `premortem` |
-| Specification | `writing-specs` | `weak-dispatch`, `reproduce` |
+| Specification | `memo`, `writing-specs` | `weak-dispatch`, `reproduce` |
 | Execution | `next-step`, `loop`, `handoff` | `done-check` |
 | Acceptance | `verifying` | `lesson` |
-| Operations | `planerka`, `consilium`, `design-stack` | `unstuck` |
+| Operations | `planerka`, `corporate`, `debrief`, `fire-drill`, `greenlight` | `unstuck` |
+| Hiring | `casting`, `design-stack`, `consilium` | `skill-craft` |
 
 ## Backlog Policy
 

@@ -1,7 +1,7 @@
 {
   "name": "office",
   "version": "1.0.0",
-  "description": "Office is a curated company operating system for coding agents: issue-first specs, departments, fresh-context verification, lessons, and multi-CLI layouts.",
+  "description": "Office is a curated company operating system for coding agents: issue-first specs, departments, hiring, fresh-context verification, lessons, and multi-CLI layouts.",
   "author": {
     "name": "Vlad Patravaev",
     "email": "patravaevvlad@gmail.com",
@@ -24,7 +24,7 @@
   "interface": {
     "displayName": "Office",
     "shortDescription": "A company operating system for coding agents.",
-    "longDescription": "Deploys an issue-first agent company into any repository: self-contained specs, department charters, model-class routing, weak-dispatch for cheap executors, fresh-context verification, lessons, rituals, and generated layouts for Claude, Codex, Gemini, OpenCode, and generic AGENTS.md.",
+    "longDescription": "Deploys an issue-first agent company into any repository: self-contained specs, department charters, hiring offers, model-class routing, weak-dispatch for cheap executors, fresh-context verification, lessons, rituals, and generated layouts for Claude, Codex, Gemini, OpenCode, and generic AGENTS.md.",
     "developerName": "Vlad Patravaev",
     "category": "Development",
     "capabilities": [

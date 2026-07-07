@@ -1,6 +1,6 @@
 {
   "name": "office",
-  "description": "Office is a curated company operating system for coding agents: issue-first specs, departments, fresh-context verification, lessons, and multi-CLI layouts. One-off work uses /solve without company bootstrap.",
+  "description": "Office is a curated company operating system for coding agents: issue-first specs, departments, hiring, fresh-context verification, lessons, and multi-CLI layouts. One-off work uses /solve without company bootstrap.",
   "version": "1.0.0",
   "author": {
     "name": "Vlad Patravaev",

@@ -1,4 +1,4 @@
-﻿# Office Agent Rules
+# Office Agent Rules
 
 This repository uses Office.
 

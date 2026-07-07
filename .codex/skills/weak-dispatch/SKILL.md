@@ -15,6 +15,7 @@ Weak executors can pass strong verification when the process removes ambiguity.
 4. All choices are pre-decided by the spec author.
 5. Machine gates run before the executor reports completion.
 6. No refactors, renames, dependency changes, or style edits beyond the spec.
+7. If the task requires mutation outside the repo, route through `greenlight`.
 
 ## Dispatch Envelope
 

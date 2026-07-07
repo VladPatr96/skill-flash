@@ -6,12 +6,23 @@ Use this registry when "hiring" a department, agent, tool, or skill. Prefer veri
 
 | Name | Source | Use | Department | Install / Access |
 |---|---|---|---|---|
-| Office compact skills | `skills/` | Specs, verification, weak dispatch, lessons, handoffs | all | bundled |
+| Office compact skills | `skills/` | Specs, verification, weak dispatch, lessons, handoffs, rituals | all | bundled |
 | GitHub CLI | https://cli.github.com | Issues, labels, PRs, release flow | board/devops | `gh auth login` |
 | Graphify | https://github.com/safishamsi/graphify | Query-first code/doc graph | all | `uv tool install graphifyy` |
 | Codex layout | `.codex/skills/` | Run Office skills from Codex | engineering | `./install.ps1 -Target codex` |
 | Claude plugin layout | `.claude-plugin/` | Claude Code plugin distribution | all | `/plugin install office@office` |
 | Generic AGENTS.md | `AGENTS.md` | CLI-neutral operating rules | all | copy into target repo |
+
+## Office Bricks
+
+| Skill | Use | Owner |
+|---|---|---|
+| `casting` | hiring a department, agent, tool, or skill | board |
+| `memo` | turning raw work into a ready issue spec | board |
+| `greenlight` | external or irreversible action approval | board |
+| `fire-drill` | incident and regression response | qa/ops |
+| `debrief` | weekly, epic, and incident retros | board |
+| `corporate` | monthly OKR and business review | board |
 
 ## Product And Operations
 
@@ -37,7 +48,5 @@ Use this registry when "hiring" a department, agent, tool, or skill. Prefer veri
 2. Existing project skills and `AGENTS.md`.
 3. Official marketplaces or verified repositories.
 4. Web search from primary sources.
-
-## Offer Format
 
 Every hiring/tool offer includes: need, department, agent/tool, install/access command, data exposure, cost vs value, fallback, and first task.

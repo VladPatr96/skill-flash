@@ -28,9 +28,15 @@ The canonical language of this repository is English. Russian docs live under `r
 | `solve` | One-off task intake | Triage S/M/L and execute without company bootstrap | `/solve fix the README install steps` |
 | `skill-craft` | Writing compact skills | Create or revise a skill by failure-driven design | `write a skill for flaky deploy triage` |
 | `writing-specs` | Self-contained specs | Before dispatching an issue/file task | `turn this bug into a spec` |
+| `memo` | Raw request to issue spec | Create a ready GitHub issue with metadata | `/memo add billing export` |
 | `verifying` | Acceptance discipline | Check work with fresh context and evidence | `verify the completed task` |
 | `weak-dispatch` | Cheap/local executor routing | Dispatch a small task to a weak model safely | `send this to a cheap executor` |
 | `planerka` | Founder standup | Batch decisions and unblock the pipeline | `/planerka` |
+| `corporate` | Business review | Produce OKR, economics, and pipeline report | `/corporate monthly review` |
+| `debrief` | Retro and learning closeout | Close epic/weekly/incident loops | `/debrief issue 12` |
+| `fire-drill` | Incident protocol | Diagnose incidents before mutation | `/fire-drill checkout is down` |
+| `greenlight` | External action gate | Verify, narrow options, and require approval | `/greenlight deploy production` |
+| `casting` | Hiring tool/agent/department | Make a concrete hiring offer | `/casting need design QA` |
 | `unstuck` | Recover from loops | Diagnose a stuck task and choose the next move | `I am stuck on this failing test` |
 | `done-check` | Final readiness check | Decide whether work is actually complete | `is this ready to close?` |
 | `recon` | Bounded investigation | Collect facts before writing a spec | `recon this payment bug` |
@@ -83,7 +89,7 @@ Distribution artifacts are generated from canonical `skills/`:
 |---|---|
 | `skills/` | Canonical English skills; each `SKILL.md` should stay <=50 lines |
 | `skills/office/templates/` | Company templates, blueprints, agent charters, and issue/spec forms |
-| `ru/` | Russian mirror of README and skill docs |
+| `ru/` | Russian mirror of README, docs, and skill docs |
 | `docs/` | Method, ADRs, distribution notes, traceability |
 | `.claude-plugin/`, `.codex-plugin/` | Plugin manifests |
 | `.claude/`, `.codex/`, `.gemini/`, `.opencode/` | Generated or compatibility layouts |

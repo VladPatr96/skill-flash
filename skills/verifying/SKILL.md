@@ -18,6 +18,7 @@ Use only the spec, the produced artifacts or diff, and the commands/scenarios na
 3. Run the exact checks from DoD, or mark missing checks as `UNVERIFIED`.
 4. Return one row per acceptance point: `PASS`, `FAIL`, or `UNVERIFIED` with evidence.
 5. If docs were part of DoD, verify them separately.
+6. For incidents, verify recovery and variant analysis separately.
 
 ## Failure Ladder
 

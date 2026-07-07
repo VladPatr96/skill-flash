@@ -19,4 +19,4 @@ Read `company/state.md`, `company/inbox.md` if present, recent issue changes, an
 4. Record decisions in `company/meetings/YYYY-MM-DD-planerka.md`.
 5. Update `company/state.md` and dispatch newly unblocked work.
 
-Silence means the recommended default is accepted only when that rule is already documented for the session or project.
+Silence means the recommended default is accepted only when that rule is already documented for the session or project. Scope, money, production, publishing, installs, and external messages never use silent defaults.

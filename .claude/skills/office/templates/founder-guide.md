@@ -6,6 +6,8 @@ Office is an agent company, not a chat transcript. Your job is to make the few d
 
 - `/office <goal>`: run the company pipeline.
 - `/solve <task>`: finish a one-off task without company bootstrap.
+- `/memo <task>`: turn raw work into a ready issue spec.
+- `/greenlight <action>`: approve an external or irreversible action.
 - `/planerka`: review facts, decisions, and next work.
 - `grill me`: answer only blocking questions.
 
@@ -19,13 +21,7 @@ Office is an agent company, not a chat transcript. Your job is to make the few d
 
 ## Decision Quality
 
-Good decisions include:
-
-- desired outcome;
-- constraint that cannot move;
-- acceptable risk;
-- default if you are silent;
-- what would make you reverse the decision.
+Good decisions include outcome, immovable constraint, acceptable risk, default if silent, and what would reverse the decision.
 
 ## Red Flags
 
