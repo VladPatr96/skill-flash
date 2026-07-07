@@ -117,3 +117,7 @@ Resolve concrete model names from the active tool at runtime.
 ## License And Attribution
 
 MIT. The compact-skill style is adapted with attribution to Matt Pocock's `skills` project and related small-skill practices; Office text and procedures are original.
+
+## Docs
+
+- [ADR-0001: English canon, ru/ mirror, 50-line skill format](docs/adr/0001-en-canon-ru-mirror-skill-format.md)
